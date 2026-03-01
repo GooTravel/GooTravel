@@ -8,7 +8,7 @@ export default function SettingsPage() {
     const [settings, setSettings] = useState({
         siteName: 'GoTravel',
         contactEmail: 'hello@gotravel.in',
-        supportPhone: '+919876543210',
+        supportPhone: '+91 821 802 7137',
         gstRate: 5,
         enableGeminiAI: true,
         maintenanceMode: false,

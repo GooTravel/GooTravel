@@ -130,7 +130,7 @@ export default function BookingDetailPage({ params }: { params: { id: string } }
                         <h3 className="font-bold mb-2">Need Trip Support?</h3>
                         <p className="text-white/60 text-sm mb-4">Our travel experts are available 24/7 to assist you with your booking.</p>
                         <div className="space-y-2 text-sm">
-                            <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-brand-400"><Clock className="w-4 h-4" /> Call: +91 98765 43210</a>
+                            <a href="tel:+918218027137" className="flex items-center gap-2 hover:text-brand-400"><Clock className="w-4 h-4" /> Call: +91 821 802 7137</a>
                             <a href="mailto:support@gotravel.in" className="flex items-center gap-2 hover:text-brand-400"><Clock className="w-4 h-4" /> Email: support@gotravel.in</a>
                         </div>
                     </div>

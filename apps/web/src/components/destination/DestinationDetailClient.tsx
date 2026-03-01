@@ -296,7 +296,7 @@ export default function DestinationDetailClient({ destination }: { destination: 
 
     const handleWhatsApp = () => {
         const msg = encodeURIComponent(`Hi! I'm interested in the ${destination.name} package (${destination.duration} days from ₹${destination.basePrice.toLocaleString('en-IN')}). Please send me details.`);
-        window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+        window.open(`https://wa.me/918218027137?text=${msg}`, '_blank');
     };
 
     return (
@@ -575,8 +575,8 @@ export default function DestinationDetailClient({ destination }: { destination: 
                                 className="w-full py-3 bg-green-500 text-white rounded-2xl font-semibold flex items-center justify-center gap-2 hover:bg-green-600 transition-colors">
                                 <MessageCircle className="w-5 h-5" /> WhatsApp Enquiry
                             </button>
-                            <a href="tel:+919876543210" className="flex items-center justify-center gap-2 text-gray-500 text-sm mt-4 hover:text-brand-500 transition-colors">
-                                <Phone className="w-4 h-4" /> +91 98765 43210
+                            <a href="tel:+918218027137" className="flex items-center justify-center gap-2 text-gray-500 text-sm mt-4 hover:text-brand-500 transition-colors">
+                                <Phone className="w-4 h-4" /> +91 821 802 7137
                             </a>
                         </div>
 

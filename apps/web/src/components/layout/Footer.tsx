@@ -44,15 +44,18 @@ export default function Footer() {
                             India's premier travel company crafting unforgettable journeys since 2014. Over 50,000 happy travelers and counting.
                         </p>
                         <div className="space-y-3 text-sm text-white/60">
-                            <a href="tel:+919876543210" className="flex items-center gap-3 hover:text-brand-400 transition-colors">
-                                <Phone className="w-4 h-4" /> +91 98765 43210
+                            <a href="tel:+918218027137" className="flex items-center gap-3 hover:text-brand-400 transition-colors">
+                                <Phone className="w-4 h-4" /> +91 821 802 7137
+                            </a>
+                            <a href="tel:+917905657348" className="flex items-center gap-3 hover:text-brand-400 transition-colors">
+                                <Phone className="w-4 h-4" /> +91 790 565 7348
                             </a>
                             <a href="mailto:hello@gotravel.in" className="flex items-center gap-3 hover:text-brand-400 transition-colors">
                                 <Mail className="w-4 h-4" /> hello@gotravel.in
                             </a>
                             <div className="flex items-start gap-3">
                                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                                <span>Gotravel House, Bandra Kurla Complex, Mumbai 400051</span>
+                                <span>Gotravel Office, Jamia Millia Islamia , New Delhi 110025</span>
                             </div>
                         </div>
                         {/* Social */}

@@ -204,7 +204,7 @@ export default function BookingClient({ initialData }: { initialData?: Record<st
                                     <div className="relative">
                                         <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                                         <input type="tel" value={form.phone} onChange={e => update('phone', e.target.value)} required
-                                            placeholder="+91 98765 43210" className="input-field pl-12" />
+                                            placeholder="+91 821 802 7137" className="input-field pl-12" />
                                     </div>
                                 </div>
                                 <div>

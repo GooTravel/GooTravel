@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import { leadsApi } from '@/lib/api';
 
 const CONTACT_INFO = [
-    { icon: Phone, label: 'Phone', value: '+91 98765 43210', link: 'tel:+919876543210', color: 'bg-green-50 text-green-600' },
+    { icon: Phone, label: 'Phone', value: '+91 821 802 7137', link: 'tel:+918218027137', color: 'bg-green-50 text-green-600' },
     { icon: Mail, label: 'Email', value: 'hello@gotravel.in', link: 'mailto:hello@gotravel.in', color: 'bg-blue-50 text-blue-600' },
     { icon: MapPin, label: 'Office', value: 'Mumbai, Maharashtra, India', link: '#', color: 'bg-brand-50 text-brand-600' },
     { icon: Clock, label: 'Hours', value: 'Mon–Sat 9AM–8PM IST', link: '#', color: 'bg-purple-50 text-purple-600' },
@@ -32,7 +32,7 @@ export default function ContactClient() {
 
     const handleWhatsApp = () => {
         const msg = encodeURIComponent('Hi GoTravel! I\'d like to enquire about a tour package.');
-        window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+        window.open(`https://wa.me/918218027137?text=${msg}`, '_blank');
     };
 
     return (
@@ -84,7 +84,7 @@ export default function ContactClient() {
                                     </div>
                                     <div>
                                         <label className="text-sm font-semibold text-gray-700 mb-1.5 block">Phone Number *</label>
-                                        <input type="tel" value={form.phone} onChange={e => update('phone', e.target.value)} required placeholder="+91 98765 43210" className="input-field" />
+                                        <input type="tel" value={form.phone} onChange={e => update('phone', e.target.value)} required placeholder="+91 821 802 7137" className="input-field" />
                                     </div>
                                 </div>
                                 <div>

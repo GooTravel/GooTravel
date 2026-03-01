@@ -70,11 +70,11 @@ export default function ChatbotWidget() {
             } else if (lower.includes('ladakh') || lower.includes('leh')) {
                 reply = "**Ladakh** is absolutely epic! 🏔️✨\n\nOur **Ladakh Adventure Circuit** (9 Days) starts at ₹29,999/person:\n- Pangong Lake overnight camp\n- Nubra Valley & camel ride\n- Khardung La (world's highest road)\n- All permits included\n\n⚠️ Best time to visit: **May to September**\n\n[View full Ladakh itinerary](/destinations/ladakh)";
             } else if (lower.includes('book') || lower.includes('price') || lower.includes('cost')) {
-                reply = "I'd love to help you book! 🎉\n\nTo give you an exact quote, I need:\n1. 📍 Which destination?\n2. 👥 How many travelers?\n3. 📅 Travel dates?\n4. 🏨 Budget range?\n\nYou can also:\n- [Browse all destinations](/destinations)\n- [Start booking directly](/booking)\n- 📞 Call us: **+91 98765 43210**";
+                reply = "I'd love to help you book! 🎉\n\nTo give you an exact quote, I need:\n1. 📍 Which destination?\n2. 👥 How many travelers?\n3. 📅 Travel dates?\n4. 🏨 Budget range?\n\nYou can also:\n- [Browse all destinations](/destinations)\n- [Start booking directly](/booking)\n- 📞 Call us: **+91 821 802 7137**";
             } else if (lower.includes('weather') || lower.includes('best time') || lower.includes('when')) {
                 reply = "Here's the **best time to visit** popular destinations:\n\n🏔️ **Kashmir:** April–October\n🏖️ **Goa:** November–February\n🌿 **Kerala:** September–March\n🏰 **Rajasthan:** October–March\n🏔️ **Ladakh:** May–September\n🏝️ **Andaman:** October–May\n⛰️ **Manali:** March–June, Sept–Nov\n\nWhich destination are you considering?";
             } else {
-                reply = "That's a great question! 😊 I'm here to help you plan the perfect Indian vacation.\n\nI can help with:\n- 🗺️ Destination recommendations\n- ✈️ Package customization\n- 💰 Budget planning\n- 📅 Itinerary creation\n\nOr you can [browse all destinations](/destinations) or [call us at +91 98765 43210](tel:+919876543210) for instant help!";
+                reply = "That's a great question! 😊 I'm here to help you plan the perfect Indian vacation.\n\nI can help with:\n- 🗺️ Destination recommendations\n- ✈️ Package customization\n- 💰 Budget planning\n- 📅 Itinerary creation\n\nOr you can [browse all destinations](/destinations) or [call us at +91 821 802 7137](tel:+918218027137) for instant help!";
             }
 
             setMessages(prev => [...prev, { role: 'assistant', content: reply }]);
@@ -145,7 +145,7 @@ export default function ChatbotWidget() {
                                 </div>
                             </div>
                             <div className="flex items-center gap-1">
-                                <a href="tel:+919876543210" className="p-1.5 hover:bg-white/10 rounded-lg transition-colors" title="Call us">
+                                <a href="tel:+918218027137" className="p-1.5 hover:bg-white/10 rounded-lg transition-colors" title="Call us">
                                     <PhoneCall className="w-4 h-4" />
                                 </a>
                                 <button onClick={() => setIsMinimized(!isMinimized)} className="p-1.5 hover:bg-white/10 rounded-lg transition-colors">

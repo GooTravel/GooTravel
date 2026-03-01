@@ -20,11 +20,17 @@ export default function AboutPage() {
                 <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 className="font-display text-3xl font-bold text-night-900 mb-6">Our Vision</h2>
-                        <p className="text-gray-600 mb-4 leading-relaxed">Founded in 2024, GoTravel started with a simple idea: booking a custom trip should be as easy as buying a plane ticket. Traditional travel agencies offer rigid packages, and DIY planning takes hundreds of hours.</p>
-                        <p className="text-gray-600 leading-relaxed">Our FIT (Flexible Independent Traveler) builder and Gemini-powered AI suggestions empower you to build your dream itinerary in minutes, not weeks. From the snow-capped peaks of Kashmir to the backwaters of Kerala, we bring the best of India to your fingertips.</p>
+                       <p className="text-gray-600 mb-4 leading-relaxed"> Founded in 2026, GoTravel was born from a simple belief: planning a personalized trip shouldn’t feel overwhelming. Traditional agencies offer rigid, one-size-fits-all packages, while planning everything yourself can take weeks of research and coordination.
+                        </p>
+
+                        <p className="text-gray-800 font-semibold mb-4"> We built something better.
+                        </p>
+
+                        <p className="text-gray-600 leading-relaxed"> Our FIT (Flexible Independent Traveler) builder, powered by intelligent AI, lets you craft a fully customized itinerary in minutes. Choose your destinations, add curated experiences, adjust your stay, and see your trip come to life instantly. From the snow-capped peaks of Kashmir to the tranquil backwaters of Kerala, GoTravel brings the best of India to your fingertips — intelligently, seamlessly, and beautifully.
+                        </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
-                        <img src="https://images.unsplash.com/photo-1524492412937-b28074d5d7da?q=80&w=1000" alt="India" className="rounded-2xl h-64 object-cover w-full" />
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1000" alt="India" className="rounded-2xl h-64 object-cover w-full" />
                         <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=1000" alt="Travel" className="rounded-2xl h-64 object-cover w-full mt-8" />
                     </div>
                 </section>

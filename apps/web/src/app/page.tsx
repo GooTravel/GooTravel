@@ -22,8 +22,8 @@ const travelAgencySchema = {
     description: 'India\'s premier travel company offering customized tours, FIT packages, and group travel experiences.',
     url: 'https://gotravel.in',
     logo: 'https://gotravel.in/logo.png',
-    telephone: '+91-98765-43210',
-    address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressRegion: 'Maharashtra', addressCountry: 'IN' },
+    telephone: '+91-821-802-7137',
+    address: { '@type': 'PostalAddress', addressLocality: 'Delhi', addressRegion: 'Delhi', addressCountry: 'IN' },
     priceRange: '₹9,999 - ₹59,999',
     sameAs: ['https://instagram.com/gotravel_india', 'https://facebook.com/gotravelindia'],
 };

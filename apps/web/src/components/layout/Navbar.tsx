@@ -55,8 +55,8 @@ export default function Navbar() {
             {/* Top bar */}
             <div className={`hidden lg:flex items-center justify-between px-6 py-2 text-sm transition-all duration-300 ${isTransparent ? 'text-white/80' : 'text-gray-600 bg-gray-50 border-b border-gray-100'}`}>
                 <div className="flex items-center gap-6">
-                    <span className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5" /> +91 98765 43210</span>
-                    <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5" /> Mumbai, India</span>
+                    <span className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5" /> +91 821 802 7137</span>
+                    <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5" /> New Delhi, India</span>
                 </div>
                 <div className="flex items-center gap-4">
                     <span>✈️ Free ₹4.5L Travel Insurance on Every Booking</span>
