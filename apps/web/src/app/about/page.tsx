@@ -12,7 +12,7 @@ export default function AboutPage() {
                 <section className="bg-night-900 text-white py-20 px-4 text-center">
                     <div className="max-w-3xl mx-auto">
                         <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Redefining Travel in India</h1>
-                        <p className="text-white/70 text-lg">We believe that every journey should be as unique as the traveler. GoTravel combines cutting-edge AI with deep local expertise to craft experiences you'll never forget.</p>
+                        <p className="text-white/70 text-lg">We believe that every journey should be as unique as the traveler. GooTravel combines cutting-edge AI with deep local expertise to craft experiences you'll never forget.</p>
                     </div>
                 </section>
 
@@ -20,13 +20,13 @@ export default function AboutPage() {
                 <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 className="font-display text-3xl font-bold text-night-900 mb-6">Our Vision</h2>
-                       <p className="text-gray-600 mb-4 leading-relaxed"> Founded in 2026, GoTravel was born from a simple belief: planning a personalized trip shouldn’t feel overwhelming. Traditional agencies offer rigid, one-size-fits-all packages, while planning everything yourself can take weeks of research and coordination.
+                       <p className="text-gray-600 mb-4 leading-relaxed"> Founded in 2026, GooTravel was born from a simple belief: planning a personalized trip shouldn't feel overwhelming. Traditional agencies offer rigid, one-size-fits-all packages, while planning everything yourself can take weeks of research and coordination.
                         </p>
 
                         <p className="text-gray-800 font-semibold mb-4"> We built something better.
                         </p>
 
-                        <p className="text-gray-600 leading-relaxed"> Our FIT (Flexible Independent Traveler) builder, powered by intelligent AI, lets you craft a fully customized itinerary in minutes. Choose your destinations, add curated experiences, adjust your stay, and see your trip come to life instantly. From the snow-capped peaks of Kashmir to the tranquil backwaters of Kerala, GoTravel brings the best of India to your fingertips — intelligently, seamlessly, and beautifully.
+                        <p className="text-gray-600 leading-relaxed"> Our FIT (Flexible Independent Traveler) builder, powered by intelligent AI, lets you craft a fully customized itinerary in minutes. Choose your destinations, add curated experiences, adjust your stay, and see your trip come to life instantly. From the snow-capped peaks of Kashmir to the tranquil backwaters of Kerala, GooTravel brings the best of India to your fingertips — intelligently, seamlessly, and beautifully.
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4">

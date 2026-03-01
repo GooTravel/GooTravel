@@ -36,7 +36,7 @@ const mockPosts = [
     },
 ];
 
-export const metadata = { title: 'Travel Blog & Guides | GoTravel', description: 'Read the latest travel guides, tips, and itineraries for exploring India.' };
+export const metadata = { title: 'Travel Blog & Guides | GooTravel', description: 'Read the latest travel guides, tips, and itineraries for exploring India.' };
 
 export default function BlogListingPage() {
     return (

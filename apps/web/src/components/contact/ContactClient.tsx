@@ -7,7 +7,7 @@ import { leadsApi } from '@/lib/api';
 
 const CONTACT_INFO = [
     { icon: Phone, label: 'Phone', value: '+91 821 802 7137', link: 'tel:+918218027137', color: 'bg-green-50 text-green-600' },
-    { icon: Mail, label: 'Email', value: 'hello@gotravel.in', link: 'mailto:hello@gotravel.in', color: 'bg-blue-50 text-blue-600' },
+    { icon: Mail, label: 'Email', value: 'hello@gootravel.in', link: 'mailto:hello@gootravel.in', color: 'bg-blue-50 text-blue-600' },
     { icon: MapPin, label: 'Office', value: 'Mumbai, Maharashtra, India', link: '#', color: 'bg-brand-50 text-brand-600' },
     { icon: Clock, label: 'Hours', value: 'Mon–Sat 9AM–8PM IST', link: '#', color: 'bg-purple-50 text-purple-600' },
 ];
@@ -31,7 +31,7 @@ export default function ContactClient() {
     };
 
     const handleWhatsApp = () => {
-        const msg = encodeURIComponent('Hi GoTravel! I\'d like to enquire about a tour package.');
+        const msg = encodeURIComponent('Hi GooTravel! I\'d like to enquire about a tour package.');
         window.open(`https://wa.me/918218027137?text=${msg}`, '_blank');
     };
 

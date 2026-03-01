@@ -70,7 +70,7 @@ export default function Navbar() {
                 <Link href="/" className="flex items-center gap-2 flex-shrink-0">
                     <div className="w-9 h-9 rounded-xl bg-gradient-brand flex items-center justify-center text-white font-bold text-lg shadow-brand">G</div>
                     <span className={`text-xl font-display font-bold transition-colors ${isTransparent ? 'text-white' : 'text-night-900'}`}>
-                        Go<span className="text-brand-500">Travel</span>
+                        Goo<span className="text-brand-500">Travel</span>
                     </span>
                 </Link>
 

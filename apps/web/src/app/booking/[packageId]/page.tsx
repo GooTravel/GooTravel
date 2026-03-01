@@ -74,7 +74,7 @@ export default function BookingPage({ params }: { params: { packageId: string } 
                     key: razorpayKeyId,
                     amount: razorpayOrder.amount,
                     currency: 'INR',
-                    name: 'GoTravel',
+                    name: 'GooTravel',
                     description: pkg?.title || 'Trip Booking',
                     order_id: razorpayOrder.id,
                     handler: async (response: any) => {

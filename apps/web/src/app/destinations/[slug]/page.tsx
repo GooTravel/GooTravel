@@ -13,9 +13,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     const dest = getDestinationBySlug(params.slug);
     if (!dest) return {};
     return {
-        title: `${dest.name} Tour Packages | GoTravel`,
+        title: `${dest.name} Tour Packages | GooTravel`,
         description: dest.shortDescription,
-        openGraph: { title: `${dest.name} - GoTravel`, description: dest.shortDescription, images: [{ url: dest.heroImage }] },
+        openGraph: { title: `${dest.name} - GooTravel`, description: dest.shortDescription, images: [{ url: dest.heroImage }] },
     };
 }
 

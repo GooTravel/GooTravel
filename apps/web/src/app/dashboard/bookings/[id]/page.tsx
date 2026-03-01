@@ -40,7 +40,7 @@ export default function BookingDetailPage({ params }: { params: { id: string } }
             </div>
 
             <div className="hidden print:block mb-8 pb-4 border-b-2 border-night-900">
-                <h1 className="text-3xl font-display font-bold text-night-900 mb-2">GoTravel Invoice</h1>
+                <h1 className="text-3xl font-display font-bold text-night-900 mb-2">GooTravel Invoice</h1>
                 <p className="text-sm text-gray-500">Date: {new Date().toLocaleDateString('en-IN')}</p>
                 <p className="text-sm text-gray-500">Ref: {booking.bookingRef}</p>
             </div>
@@ -131,7 +131,7 @@ export default function BookingDetailPage({ params }: { params: { id: string } }
                         <p className="text-white/60 text-sm mb-4">Our travel experts are available 24/7 to assist you with your booking.</p>
                         <div className="space-y-2 text-sm">
                             <a href="tel:+918218027137" className="flex items-center gap-2 hover:text-brand-400"><Clock className="w-4 h-4" /> Call: +91 821 802 7137</a>
-                            <a href="mailto:support@gotravel.in" className="flex items-center gap-2 hover:text-brand-400"><Clock className="w-4 h-4" /> Email: support@gotravel.in</a>
+                            <a href="mailto:support@gootravel.in" className="flex items-center gap-2 hover:text-brand-400"><Clock className="w-4 h-4" /> Email: support@gootravel.in</a>
                         </div>
                     </div>
                 </div>

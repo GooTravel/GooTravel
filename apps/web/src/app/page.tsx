@@ -12,21 +12,21 @@ import type { Metadata } from 'next';
 import { JsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-    title: 'GoTravel - India\'s Premier Travel Experience | Book Now',
-    description: 'Discover magical India with GoTravel. Customized Kashmir, Goa, Kerala, Manali & Rajasthan tours. FIT packages, group tours & honeymoon specials starting ₹9,999.',
+    title: 'GooTravel - India\'s Premier Travel Experience | Book Now',
+    description: 'Discover magical India with GooTravel. Customized Kashmir, Goa, Kerala, Manali & Rajasthan tours. FIT packages, group tours & honeymoon specials starting ₹',
 };
 
 const travelAgencySchema = {
     '@context': 'https://schema.org',
     '@type': 'TravelAgency',
-    name: 'GoTravel',
+    name: 'GooTravel',
     description: 'India\'s premier travel company offering customized tours, FIT packages, and group travel experiences.',
-    url: 'https://gotravel.in',
-    logo: 'https://gotravel.in/logo.png',
+    url: 'https://gootravel.in',
+    logo: 'https://gootravel.in/logo.png',
     telephone: '+91-821-802-7137',
     address: { '@type': 'PostalAddress', addressLocality: 'Delhi', addressRegion: 'Delhi', addressCountry: 'IN' },
     priceRange: '₹9,999 - ₹59,999',
-    sameAs: ['https://instagram.com/gotravel_india', 'https://facebook.com/gotravelindia'],
+    sameAs: ['https://instagram.com/gootravel_india', 'https://facebook.com/gootravelindia'],
 };
 
 export default function HomePage() {

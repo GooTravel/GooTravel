@@ -12,7 +12,7 @@ export default function PrivacyPage() {
                         <p className="text-gray-500 text-sm mb-8">Last Updated: October 2024</p>
 
                         <div className="space-y-6 text-gray-600">
-                            <p>At GoTravel, your privacy is of utmost importance to us. This Privacy Policy outlines how we collect, use, and protect your personal information.</p>
+                            <p>At GooTravel, your privacy is of utmost importance to us. This Privacy Policy outlines how we collect, use, and protect your personal information.</p>
 
                             <h2 className="text-xl font-bold text-night-900 mt-8 mb-4">1. Information We Collect</h2>
                             <p>We may collect personal identification information including name, email address, phone number, and payment details when you create an account, make a booking, or contact support.</p>

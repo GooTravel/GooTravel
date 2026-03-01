@@ -3,7 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Calendar, User, ArrowLeft, Share2 } from 'lucide-react';
 
-export const metadata = { title: 'The Ultimate Guide to Kerala\'s Backwaters | GoTravel', description: 'Discover the magic of God\'s Own Country. From the monsoon boat races to serene winter cruises.' };
+export const metadata = { title: 'The Ultimate Guide to Kerala\'s Backwaters | GooTravel', description: 'Discover the magic of God\'s Own Country. From the monsoon boat races to serene winter cruises.' };
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
     // In a real app, we would fetch post by slug here. Using mock data for demo.
@@ -53,7 +53,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     <ul>
                         <li><strong>Ideal for:</strong> First-time visitors, honeymooners, and photography enthusiasts.</li>
                         <li><strong>What to expect:</strong> Clear skies, calm waters ideal for houseboat cruising, and festive energy during Christmas and New Year.</li>
-                        <li><strong>Pro Tip:</strong> This is the busiest time of year. Ensure you book your houseboat and accommodations well in advance using GoTravel's FIT builder!</li>
+                        <li><strong>Pro Tip:</strong> This is the busiest time of year. Ensure you book your houseboat and accommodations well in advance using GooTravel's FIT builder!</li>
                     </ul>
 
                     <div className="bg-brand-50 rounded-2xl p-6 my-8 border border-brand-100">
