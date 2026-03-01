@@ -2,7 +2,8 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import FeaturedDestinations from '@/components/home/FeaturedDestinations';
-import StatsSection from '@/components/home/StatsSection';
+import HowItWorks from '@/components/home/HowItWorks';
+// import StatsSection from '@/components/home/StatsSection';
 import FITTeaser from '@/components/home/FITTeaser';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
 import WhyChooseUs from '@/components/home/WhyChooseUs';
@@ -36,7 +37,8 @@ export default function HomePage() {
             <main>
                 <HeroSection />
                 <FeaturedDestinations />
-                <StatsSection />
+                <HowItWorks />
+                {/* <StatsSection /> */}
                 <FITTeaser />
                 <WhyChooseUs />
                 <TestimonialsSection />

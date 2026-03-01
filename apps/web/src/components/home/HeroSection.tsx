@@ -71,7 +71,7 @@ export default function HeroSection() {
                         <span className="relative">
                             <span className="text-brand-400">Incredible</span>
                             <motion.div
-                                className="absolute -bottom-2 left-0 h-1 bg-brand-500 rounded-full"
+                                className="absolute -bottom- -0.5 left-0 h-1 bg-brand-500 rounded-full"
                                 initial={{ width: 0 }}
                                 animate={{ width: '100%' }}
                                 transition={{ delay: 1, duration: 0.6 }}
