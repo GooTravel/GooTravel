@@ -46,7 +46,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                 {!collapsed && (
                     <div className="flex items-center gap-2">
                         <div className="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center text-white font-bold text-sm">G</div>
-                        <span className="text-white font-bold">GoTravel</span>
+                        <span className="text-white font-bold">GooTravel</span>
                         <span className="text-brand-400 text-xs font-medium px-1.5 py-0.5 bg-brand-500/20 rounded">ADMIN</span>
                     </div>
                 )}
@@ -60,8 +60,8 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                 {navItems.map(item => (
                     <Link key={item.href} href={item.href}
                         className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all text-sm font-medium ${pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href))
-                                ? 'bg-brand-500 text-white'
-                                : 'text-white/60 hover:text-white hover:bg-white/5'
+                            ? 'bg-brand-500 text-white'
+                            : 'text-white/60 hover:text-white hover:bg-white/5'
                             }`}
                     >
                         <item.icon className="w-5 h-5 flex-shrink-0" />
