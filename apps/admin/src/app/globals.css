@@ -18,7 +18,7 @@ body {
 
 @layer components {
     .btn-primary {
-        @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-500 text-white font-semibold hover:bg-brand-600 transition-all duration-200 text-sm;
+        @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#FF6B35] text-white font-semibold hover:bg-[#e55a24] transition-all duration-200 text-sm;
     }
 
     .card {
@@ -26,7 +26,7 @@ body {
     }
 
     .input-field {
-        @apply w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-night-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-300 focus:border-brand-400 transition-all;
+        @apply w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-400 transition-all;
     }
 
     .badge {
