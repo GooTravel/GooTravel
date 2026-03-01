@@ -65,7 +65,7 @@ export const MOCK_USERS = [
 
 export const MOCK_REVIEWS = [
     { _id: 'r1', userName: 'Priya Sharma', destination: 'Kashmir', rating: 5, title: 'Magical honeymoon!', text: 'The Kashmir package was beyond perfect. The houseboat stay was unforgettable.', status: 'published', createdAt: new Date(Date.now() - 86400000).toISOString() },
-    { _id: 'r2', userName: 'Rahul Mehta', destination: 'Ladakh', rating: 5, title: 'Best bike trip ever!', text: 'Everything was perfectly organized. GoTravel team is outstanding!', status: 'published', createdAt: new Date(Date.now() - 259200000).toISOString() },
+    { _id: 'r2', userName: 'Rahul Mehta', destination: 'Ladakh', rating: 5, title: 'Best bike trip ever!', text: 'Everything was perfectly organized. GooTravel team is outstanding!', status: 'published', createdAt: new Date(Date.now() - 259200000).toISOString() },
     { _id: 'r3', userName: 'Vikram Patel', destination: 'Rajasthan', rating: 4, title: 'Heritage Tour Review', text: 'Great experience. Jaisalmer camel safari was a highlight!', status: 'pending', createdAt: new Date(Date.now() - 432000000).toISOString() },
 ];
 

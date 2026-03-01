@@ -6,8 +6,8 @@ import { Save, Settings2, ShieldCheck, Mail, Database } from 'lucide-react';
 export default function SettingsPage() {
     const [saving, setSaving] = useState(false);
     const [settings, setSettings] = useState({
-        siteName: 'GoTravel',
-        contactEmail: 'hello@gotravel.in',
+        siteName: 'GooTravel',
+        contactEmail: 'hello@gootravel.in',
         supportPhone: '+91 821 802 7137',
         gstRate: 5,
         enableGeminiAI: true,
@@ -27,7 +27,7 @@ export default function SettingsPage() {
         <div className="max-w-4xl space-y-6">
             <div>
                 <h1 className="text-2xl font-bold text-night-900">Platform Settings</h1>
-                <p className="text-gray-500 text-sm">Manage global configuration for GoTravel</p>
+                <p className="text-gray-500 text-sm">Manage global configuration for GooTravel</p>
             </div>
 
             <form onSubmit={handleSave} className="space-y-6">
