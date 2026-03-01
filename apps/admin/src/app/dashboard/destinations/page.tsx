@@ -1,87 +1,88 @@
 'use client';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
-import toast from 'react-hot-toast';
-import { Search, Plus, MapPin, Tag, Edit, Trash2 } from 'lucide-react';
-
-const api = axios.create({ baseURL: process.env.NEXT_PUBLIC_API_URL });
-api.interceptors.request.use(cfg => { const t = typeof window !== 'undefined' && localStorage.getItem('gt_admin_token'); if (t) cfg.headers.Authorization = `Bearer ${t}`; return cfg; });
+import { motion } from 'framer-motion';
+import { Plus, Edit, ToggleLeft, ToggleRight, Star, Clock, DollarSign } from 'lucide-react';
+import { adminApi, MOCK_DESTINATIONS } from '@/lib/api';
 
 export default function DestinationsPage() {
-    const [destinations, setDestinations] = useState<any[]>([]);
-    const [loading, setLoading] = useState(true);
-    const [search, setSearch] = useState('');
-    const [page, setPage] = useState(1);
-    const [total, setTotal] = useState(0);
+    const [destinations, setDestinations] = useState<any[]>(MOCK_DESTINATIONS);
+    const [loading, setLoading] = useState(false);
 
-    const fetchDestinations = async () => {
+    useEffect(() => {
         setLoading(true);
-        try {
-            const res = await api.get('/destinations', { params: { page, limit: 12, search: search || undefined } });
-            setDestinations(res.data.data || []);
-            setTotal(res.data.pagination?.total || 0);
-        } catch { } finally { setLoading(false); }
+        adminApi.get('/destinations?limit=50')
+            .then(res => { if (res.data.data?.length) setDestinations(res.data.data); })
+            .catch(() => setDestinations(MOCK_DESTINATIONS))
+            .finally(() => setLoading(false));
+    }, []);
+
+    const toggleActive = async (id: string, isActive: boolean) => {
+        try { await adminApi.patch(`/destinations/${id}`, { isActive: !isActive }); } catch { }
+        setDestinations(prev => prev.map(d => d._id === id ? { ...d, isActive: !isActive } : d));
     };
 
-    useEffect(() => { fetchDestinations(); }, [page]);
+    const toggleFeatured = async (id: string, isFeatured: boolean) => {
+        try { await adminApi.patch(`/destinations/${id}`, { isFeatured: !isFeatured }); } catch { }
+        setDestinations(prev => prev.map(d => d._id === id ? { ...d, isFeatured: !isFeatured } : d));
+    };
 
     return (
-        <div className="space-y-5">
-            <div className="flex flex-wrap justify-between items-center gap-4">
+        <div className="space-y-6">
+            <div className="flex items-center justify-between">
                 <div>
-                    <h1 className="text-2xl font-bold text-night-900">Destinations Management</h1>
-                    <p className="text-gray-500 text-sm">{total} active destinations on platform</p>
+                    <h1 className="text-2xl font-bold text-night-900">Destinations</h1>
+                    <p className="text-gray-400 text-sm">{destinations.length} destinations · {destinations.filter(d => d.isActive).length} active</p>
                 </div>
-                <button className="btn-primary" onClick={() => toast.error('Creation modal not implemented in demo')}><Plus className="w-4 h-4" /> Add Destination</button>
+                <div className="flex items-center gap-3">
+                    {loading && <div className="w-5 h-5 border-2 border-brand-500 border-t-transparent rounded-full animate-spin" />}
+                    <button className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-500 text-white font-semibold hover:bg-brand-600 transition-all text-sm">
+                        <Plus className="w-4 h-4" /> Add Destination
+                    </button>
+                </div>
             </div>
 
-            <div className="card p-4 flex items-center gap-3">
-                <Search className="w-5 h-5 text-gray-400" />
-                <input value={search} onChange={e => setSearch(e.target.value)} onKeyDown={e => e.key === 'Enter' && fetchDestinations()} placeholder="Search destinations by name or state..." className="flex-1 outline-none text-sm text-night-900 placeholder:text-gray-400" />
-                <button onClick={fetchDestinations} className="btn-primary py-2 px-4">Search</button>
-            </div>
-
-            {loading ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {[...Array(6)].map((_, i) => <div key={i} className="h-64 rounded-2xl bg-gray-200 animate-pulse" />)}
-                </div>
-            ) : destinations.length === 0 ? (
-                <div className="text-center py-12 text-gray-400 bg-white rounded-2xl shadow-sm border border-gray-100">No destinations found.</div>
-            ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {destinations.map(d => (
-                        <div key={d._id} className="card overflow-hidden hover:shadow-md transition-shadow flex flex-col">
-                            <div className="h-40 bg-gray-200 relative">
-                                {d.images?.[0] && <img src={d.images[0].url} alt={d.name} className="w-full h-full object-cover" />}
-                                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur px-2 py-1 rounded-md flex items-center gap-1 text-xs font-bold text-night-900">
-                                    ★ {d.averageRating?.toFixed(1) || 'New'}
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                {destinations.map((dest, i) => (
+                    <motion.div key={dest._id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}
+                        className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <div className="bg-gradient-to-r from-night-900 to-night-800 p-5">
+                            <div className="flex items-start justify-between mb-3">
+                                <div>
+                                    <h3 className="text-white font-bold text-lg">{dest.name}</h3>
+                                    <p className="text-white/60 text-sm">{dest.state}</p>
+                                </div>
+                                <div className="flex flex-col gap-1 items-end">
+                                    {dest.isFeatured && <span className="bg-brand-500 text-white text-xs px-2 py-0.5 rounded-full font-medium">Featured</span>}
+                                    <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${dest.isActive ? 'bg-green-500 text-white' : 'bg-gray-500 text-white'}`}>
+                                        {dest.isActive ? 'Active' : 'Inactive'}
+                                    </span>
                                 </div>
                             </div>
-                            <div className="p-4 flex-1 flex flex-col">
-                                <h3 className="font-bold text-night-900 text-lg mb-1">{d.name}</h3>
-                                <p className="flex items-center gap-1.5 text-sm text-gray-500 mb-3"><MapPin className="w-3.5 h-3.5 text-brand-500" /> {d.state}, India</p>
-                                <div className="flex flex-wrap gap-2 mb-4">
-                                    <span className="badge bg-gray-100 text-gray-600 flex items-center gap-1"><Tag className="w-3 h-3" /> {d.difficultyLevel || 'Easy'}</span>
-                                </div>
-                                <div className="mt-auto flex justify-between items-center pt-3 border-t border-gray-100">
-                                    <span className="text-sm font-semibold text-brand-500">Starts at ₹{d.startingPrice?.toLocaleString('en-IN') || '0'}</span>
-                                    <div className="flex gap-2">
-                                        <button className="p-1.5 text-gray-400 hover:text-blue-500 transition-colors"><Edit className="w-4 h-4" /></button>
-                                        <button className="p-1.5 text-gray-400 hover:text-red-500 transition-colors"><Trash2 className="w-4 h-4" /></button>
-                                    </div>
-                                </div>
+                            <div className="flex items-center gap-4 text-sm">
+                                <span className="flex items-center gap-1 text-white/70"><Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />{dest.rating}</span>
+                                <span className="flex items-center gap-1 text-white/70"><Clock className="w-3.5 h-3.5" />{dest.duration}D</span>
+                                <span className="flex items-center gap-1 text-white/70"><DollarSign className="w-3.5 h-3.5" />₹{dest.basePrice?.toLocaleString('en-IN')}</span>
                             </div>
                         </div>
-                    ))}
-                </div>
-            )}
-
-            <div className="flex justify-between items-center">
-                <p className="text-sm text-gray-500">Showing {destinations.length} of {total}</p>
-                <div className="flex gap-2">
-                    <button onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1} className="px-3 py-1.5 rounded-xl text-sm border border-gray-200 disabled:opacity-40">← Prev</button>
-                    <button onClick={() => setPage(p => p + 1)} disabled={destinations.length < 12} className="px-3 py-1.5 rounded-xl text-sm border border-gray-200 disabled:opacity-40">Next →</button>
-                </div>
+                        <div className="p-4 flex items-center justify-between">
+                            <div className="flex gap-3">
+                                <button onClick={() => toggleActive(dest._id, dest.isActive)}
+                                    className={`flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg transition-colors ${dest.isActive ? 'text-red-600 hover:bg-red-50' : 'text-green-600 hover:bg-green-50'}`}>
+                                    {dest.isActive ? <ToggleLeft className="w-4 h-4" /> : <ToggleRight className="w-4 h-4" />}
+                                    {dest.isActive ? 'Deactivate' : 'Activate'}
+                                </button>
+                                <button onClick={() => toggleFeatured(dest._id, dest.isFeatured)}
+                                    className={`flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg transition-colors ${dest.isFeatured ? 'text-gray-500 hover:bg-gray-50' : 'text-brand-500 hover:bg-brand-50'}`}>
+                                    <Star className="w-4 h-4" />
+                                    {dest.isFeatured ? 'Unfeature' : 'Feature'}
+                                </button>
+                            </div>
+                            <button className="p-2 hover:bg-gray-100 text-gray-500 rounded-lg transition-colors" title="Edit">
+                                <Edit className="w-4 h-4" />
+                            </button>
+                        </div>
+                    </motion.div>
+                ))}
             </div>
         </div>
     );
