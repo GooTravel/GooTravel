@@ -4,10 +4,10 @@ import DestinationsListClient from '@/components/destination/DestinationsListCli
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'India Tour Packages | Book Travel Packages | GoTravel',
-    description: 'Explore 150+ India destinations on GoTravel. Filter by budget, duration, type. Group tours, FIT packages & honeymoon specials from ₹9,999.',
+    title: 'India Tour Packages | Book Travel Packages | GooTravel',
+    description: 'Explore 150+ India destinations on GooTravel. Filter by budget, duration, type. Group tours, FIT packages & honeymoon specials from ₹9,999.',
     keywords: 'India tour packages, travel packages India, group tours, FIT packages, honeymoon packages',
-    openGraph: { title: 'India Tour Packages | GoTravel', description: 'Explore 150+ India destinations — Kashmir, Goa, Kerala, Manali & more.' },
+    openGraph: { title: 'India Tour Packages | GooTravel', description: 'Explore 150+ India destinations — Kashmir, Goa, Kerala, Manali & more.' },
 };
 
 export default function DestinationsPage({ searchParams }: { searchParams: Record<string, string> }) {

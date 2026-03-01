@@ -515,7 +515,7 @@ export default function DestinationDetailClient({ destination }: { destination: 
                                 <div className="space-y-4">
                                     {[
                                         { name: 'Priya Sharma', city: 'Delhi', rating: 5, text: 'Absolutely breathtaking! Every detail was perfect. The guides were knowledgeable and friendly.', date: '2 weeks ago' },
-                                        { name: 'Rahul Mehta', city: 'Mumbai', rating: 5, text: `One of the best trips of my life to ${destination.name}. GoTravel made it completely hassle-free.`, date: '1 month ago' },
+                                        { name: 'Rahul Mehta', city: 'Mumbai', rating: 5, text: `One of the best trips of my life to ${destination.name}. GooTravel made it completely hassle-free.`, date: '1 month ago' },
                                         { name: 'Anjali Singh', city: 'Bangalore', rating: 4, text: 'Great experience overall. The package was value for money and the accommodations were excellent.', date: '1 month ago' },
                                         { name: 'Vikram Patel', city: 'Pune', rating: 5, text: 'Highly recommend! The AI itinerary planner helped us customize the perfect trip.', date: '2 months ago' },
                                     ].map((review, i) => (

@@ -19,7 +19,7 @@ const footerLinks = {
         { label: 'Trekking', href: '/destinations?tags=trekking' },
     ],
     Company: [
-        { label: 'About GoTravel', href: '/about' },
+        { label: 'About GooTravel', href: '/about' },
         { label: 'Blog & Travel Tips', href: '/blog' },
         { label: 'Contact Us', href: '/contact' },
         { label: 'Careers', href: '/careers' },
@@ -38,10 +38,10 @@ export default function Footer() {
                     <div className="lg:col-span-2">
                         <Link href="/" className="flex items-center gap-2 mb-6">
                             <div className="w-9 h-9 rounded-xl bg-gradient-brand flex items-center justify-center text-white font-bold text-lg">G</div>
-                            <span className="text-xl font-display font-bold">Go<span className="text-brand-400">Travel</span></span>
+                            <span className="text-xl font-display font-bold">Goo<span className="text-brand-400">Travel</span></span>
                         </Link>
                         <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
-                            India's premier travel company crafting unforgettable journeys since 2014. Over 50,000 happy travelers and counting.
+                            GooTravel is a modern AI-powered travel platform helping you build flexible, customized trips across India with complete transparency and control.
                         </p>
                         <div className="space-y-3 text-sm text-white/60">
                             <a href="tel:+918218027137" className="flex items-center gap-3 hover:text-brand-400 transition-colors">
@@ -50,12 +50,12 @@ export default function Footer() {
                             <a href="tel:+917905657348" className="flex items-center gap-3 hover:text-brand-400 transition-colors">
                                 <Phone className="w-4 h-4" /> +91 790 565 7348
                             </a>
-                            <a href="mailto:hello@gotravel.in" className="flex items-center gap-3 hover:text-brand-400 transition-colors">
-                                <Mail className="w-4 h-4" /> hello@gotravel.in
+                            <a href="mailto:hello@gootravel.in" className="flex items-center gap-3 hover:text-brand-400 transition-colors">
+                                <Mail className="w-4 h-4" /> hello@gootravel.in
                             </a>
                             <div className="flex items-start gap-3">
                                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                                <span>Gotravel Office, Jamia Millia Islamia , New Delhi 110025</span>
+                                <span>GooTravel Office, Jamia Millia Islamia , New Delhi 110025</span>
                             </div>
                         </div>
                         {/* Social */}
@@ -89,7 +89,7 @@ export default function Footer() {
             {/* Bottom bar */}
             <div className="border-t border-white/10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p className="text-white/40 text-sm">© {new Date().getFullYear()} GoTravel. All rights reserved.</p>
+                    <p className="text-white/40 text-sm">© {new Date().getFullYear()} GooTravel. All rights reserved.</p>
                     <div className="flex items-center gap-4">
                         <span className="text-white/20 text-sm">Registered: IATA · ATOL · MoT India</span>
                         <div className="flex gap-6 text-sm text-white/40">

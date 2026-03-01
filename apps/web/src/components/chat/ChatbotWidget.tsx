@@ -14,7 +14,7 @@ const QUICK_REPLIES = [
     '⏰ When to visit Kerala?',
 ];
 
-const SYSTEM_CONTEXT = `You are a friendly and expert GoTravel AI assistant for an India-focused travel booking platform. 
+const SYSTEM_CONTEXT = `You are a friendly and expert GooTravel AI assistant for an India-focused travel booking platform. 
 You help users find, customize, and book travel packages across India. 
 Available destinations include: Kashmir, Goa, Kerala, Rajasthan, Manali, Andaman Islands, Varanasi, and Leh Ladakh.
 All packages include accommodation, meals, and transfers. Prices start from ₹9,999 per person.
@@ -28,7 +28,7 @@ export default function ChatbotWidget() {
     const [messages, setMessages] = useState<{ role: 'user' | 'assistant', content: string }[]>([
         {
             role: 'assistant',
-            content: "🙏 Namaste! I'm **Aria**, your GoTravel AI assistant.\n\nI can help you:\n- 🗺️ Find the perfect Indian destination\n- ✈️ Customize your travel package\n- 💰 Get the best price for your budget\n- 📅 Plan your perfect itinerary\n\nWhat are you dreaming of exploring today?"
+            content: "🙏 Namaste! I'm **Aria**, your GooTravel AI assistant.\n\nI can help you:\n- 🗺️ Find the perfect Indian destination\n- ✈️ Customize your travel package\n- 💰 Get the best price for your budget\n- 📅 Plan your perfect itinerary\n\nWhat are you dreaming of exploring today?"
         }
     ]);
     const [input, setInput] = useState('');
@@ -140,7 +140,7 @@ export default function ChatbotWidget() {
                                         animate={{ scale: [1, 1.2, 1] }} transition={{ repeat: Infinity, duration: 2 }} />
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold text-sm">Aria — GoTravel AI</h3>
+                                    <h3 className="font-semibold text-sm">Aria — GooTravel AI</h3>
                                     <p className="text-[10px] text-white/70">Your personal travel planner · Online</p>
                                 </div>
                             </div>

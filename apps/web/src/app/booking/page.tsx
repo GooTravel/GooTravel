@@ -4,8 +4,8 @@ import BookingClient from '@/components/booking/BookingClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Book Your Dream Trip | GoTravel',
-    description: 'Book your customized India tour package with GoTravel. Easy booking, Razorpay payment, and instant confirmation.',
+    title: 'Book Your Dream Trip | GooTravel',
+    description: 'Book your customized India tour package with GooTravel. Easy booking, Razorpay payment, and instant confirmation.',
 };
 
 export default function BookingPage({ searchParams }: { searchParams: Record<string, string> }) {

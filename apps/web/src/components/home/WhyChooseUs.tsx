@@ -17,8 +17,8 @@ export default function WhyChooseUs() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-14">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-                        <span className="inline-block px-4 py-2 rounded-full bg-night-900/5 text-night-900 text-sm font-semibold mb-4">🏆 Why GoTravel</span>
-                        <h2 className="section-title mb-4">Why Travelers Choose <span className="text-brand-500">GoTravel</span></h2>
+                        <span className="inline-block px-4 py-2 rounded-full bg-night-900/5 text-night-900 text-sm font-semibold mb-4">🏆 Why GooTravel</span>
+                        <h2 className="section-title mb-4">Why Travelers Choose <span className="text-brand-500">GooTravel</span></h2>
                         <p className="section-subtitle max-w-2xl mx-auto">We're not just a travel agency — we're your trusted travel companion, redefining how modern India plans travel — powered by flexibility, transparency, and intelligent technology.</p>
                     </motion.div>
                 </div>

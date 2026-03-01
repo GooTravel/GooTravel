@@ -4,8 +4,8 @@ import ContactClient from '@/components/contact/ContactClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Contact Us | GoTravel',
-    description: 'Get in touch with GoTravel. Our travel experts are available 24/7 to help you plan the perfect India tour.',
+    title: 'Contact Us | GooTravel',
+    description: 'Get in touch with GooTravel. Our travel experts are available 24/7 to help you plan the perfect India tour.',
 };
 
 export default function ContactPage() {

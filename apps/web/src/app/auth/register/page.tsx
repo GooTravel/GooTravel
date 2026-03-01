@@ -19,7 +19,7 @@ export default function RegisterPage() {
             const res = await authApi.register(form);
             localStorage.setItem('gt_token', res.data.token);
             localStorage.setItem('gt_user', JSON.stringify(res.data.data));
-            toast.success('Account created! Welcome to GoTravel 🎉');
+            toast.success('Account created! Welcome to GooTravel 🎉');
             router.push('/destinations');
         } catch (err: any) {
             toast.error(err.response?.data?.error || 'Registration failed.');
@@ -56,7 +56,7 @@ export default function RegisterPage() {
                         </Link>
                     </div>
                     <h1 className="font-display text-3xl font-bold text-night-900 mb-2">Create Account</h1>
-                    <p className="text-gray-500 mb-8">Start your journey with GoTravel today.</p>
+                    <p className="text-gray-500 mb-8">Start your journey with GooTravel today.</p>
                     <form onSubmit={handleRegister} className="space-y-4">
                         <div className="relative">
                             <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />

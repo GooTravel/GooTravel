@@ -12,10 +12,10 @@ export default function TermsPage() {
                         <p className="text-gray-500 text-sm mb-8">Last Updated: October 2024</p>
 
                         <div className="space-y-6 text-gray-600">
-                            <p>Welcome to GoTravel. By accessing our website and using our services, you agree to comply with and be bound by the following terms.</p>
+                            <p>Welcome to GooTravel. By accessing our website and using our services, you agree to comply with and be bound by the following terms.</p>
 
                             <h2 className="text-xl font-bold text-night-900 mt-8 mb-4">1. Booking and Payments</h2>
-                            <p>All bookings made through GoTravel are subject to availability. A booking is only confirmed once full payment or the required deposit has been received. All payments are securely processed via Razorpay.</p>
+                            <p>All bookings made through GooTravel are subject to availability. A booking is only confirmed once full payment or the required deposit has been received. All payments are securely processed via Razorpay.</p>
 
                             <h2 className="text-xl font-bold text-night-900 mt-8 mb-4">2. Cancellations and Refunds</h2>
                             <p>Cancellation policies vary by destination and package. Standard policy allows for free cancellation up to 30 days before the travel date, subject to a 5% processing fee. Cancellations made within 30 days are subject to strict penalties.</p>
